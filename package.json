@@ -1,8 +1,8 @@
 {
-  "name": "rrule",
+  "name": "rrule-without-luxon",
   "version": "2.6.4",
   "description": "JavaScript library for working with recurrence rules for calendar dates.",
-  "homepage": "http://jakubroztocil.github.io/rrule/",
+  "homepage": "https://github.com/samouri/rrule",
   "license": "BSD-3-Clause",
   "keywords": [
     "dates",
@@ -69,7 +69,8 @@
     "typescript": "^3.7.3",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.41.3",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "luxon": "^1.21.3"
   },
   "standard": {
     "ignore": [
@@ -80,9 +81,6 @@
     "dist",
     "README.md"
   ],
-  "optionalDependencies": {
-    "luxon": "^1.21.3"
-  },
   "peerDependencies": {},
   "dependencies": {
     "tslib": "^1.10.0"

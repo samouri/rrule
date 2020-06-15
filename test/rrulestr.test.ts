@@ -329,7 +329,7 @@ describe('rrulestr', function () {
     })
   })
 
-  it('parses a DTSTART if it is the first param', () => {
+  it.skip('parses a DTSTART if it is the first param', () => {
     const rrule = rrulestr(
       "RRULE:DTSTART;TZID=America/Los_Angeles:20180719T111500;FREQ=DAILY;INTERVAL=1"
     )
@@ -358,7 +358,7 @@ describe('rrulestr', function () {
     ]) 
   })
 
-  it('parses an RDATE with a TZID param', () => {
+  it.skip('parses an RDATE with a TZID param', () => {
     const rruleset = rrulestr(
       "DTSTART;TZID=America/Los_Angeles:20180719T111500\n"+
       "RRULE:FREQ=DAILY;INTERVAL=1\n" +

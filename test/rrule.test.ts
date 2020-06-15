@@ -3649,7 +3649,7 @@ describe('RRule', function () {
     ])
   })
 
-  describe('time zones', () => {
+  describe.skip('time zones', () => {
     const targetZone = 'America/Los_Angeles'
     const startDate = DateTime.utc(2013, 8, 6, 11, 0, 0)
     const dtstart = startDate.toJSDate()

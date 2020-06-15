@@ -396,7 +396,7 @@ describe('RRuleSet', function () {
       ])
     })
 
-    it('generates rules with tzid', () => {
+    it.skip('generates rules with tzid', () => {
       const set = new RRuleSet()
 
       set.rrule(new RRule({
@@ -418,7 +418,7 @@ describe('RRuleSet', function () {
       ])
     })
 
-    it('generates a value with RDATE with tzid', () => {
+    it.skip('generates a value with RDATE with tzid', () => {
       const set = new RRuleSet()
 
       set.rrule(new RRule({
@@ -485,7 +485,7 @@ describe('RRuleSet', function () {
       expect(set.tzid()).to.equal('America/New_York')
     })
 
-    it('generates EXDATE with tzid', () => {
+    it.skip('generates EXDATE with tzid', () => {
       const set = new RRuleSet()
 
       set.rrule(new RRule({
@@ -638,7 +638,7 @@ describe('RRuleSet', function () {
       ].join('\n'))
     })
 
-    it('handles rule in a timezone', () => {
+    it.skip('handles rule in a timezone', () => {
       const legacy = [
         'RRULE:DTSTART;TZID=America/New_York:20171201T080000;FREQ=WEEKLY',
       ]
@@ -714,7 +714,7 @@ describe('RRuleSet', function () {
     }
   })
 
-  it('generates invalid date objects on an rruleset with invalid TZID and exdate', () => {
+  it.skip('generates invalid date objects on an rruleset with invalid TZID and exdate', () => {
     const set = new RRuleSet()
     set.rrule(new RRule({
       count: 1,

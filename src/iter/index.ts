@@ -5,7 +5,6 @@ import Iterinfo from '../iterinfo/index'
 import RRule from '../rrule'
 import { buildTimeset } from '../parseoptions'
 import { notEmpty, includes, isPresent } from '../helpers'
-import { DateWithZone } from '../datewithzone'
 import { buildPoslist } from './poslist'
 import { Time, DateTime } from '../datetime'
 
@@ -147,7 +146,7 @@ function isFiltered (
 }
 
 function rezoneIfNeeded (date: Date, options: ParsedOptions) {
-  return new DateWithZone(date, options.tzid).rezonedDate()
+  return date
 }
 
 function emitResult <M extends QueryMethodTypes> (iterResult: IterResult<M>) {
